@@ -1,5 +1,5 @@
 function loadTasks() {
-    fetch('/tasks')
+    fetch('/api/tasks')
         .then(response => response.json())
         .then(tasks => {
             const taskTable = document.getElementById('taskTable').getElementsByTagName('tbody')[0];
@@ -60,7 +60,7 @@ loadTasks();
 // Function to delete the task
 function deleteTask(taskId) {
     if (confirm('Are you sure you want to delete this task?')) {
-        fetch(`/tasks/${taskId}`, {
+        fetch(`/api/tasks/${taskId}`, {
             method: 'DELETE',
         })
         .then(response => {
