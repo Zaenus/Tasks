@@ -16,7 +16,7 @@ document.getElementById('taskForm').addEventListener('submit', function(e) {
         created_at
     };
 
-    fetch('/create-task', {
+    fetch('/api/create-task', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
