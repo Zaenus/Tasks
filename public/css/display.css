@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Table Container */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #4b6b8b;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Table Header */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Table Rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e9f7e2;
+}
+
+/* Priority Color Styling */
+td:nth-child(4) {
+    font-weight: bold;
+}
+
+td:nth-child(4)[data-priority="low"] {
+    color: #4CAF50; /* Green */
+}
+
+td:nth-child(4)[data-priority="medium"] {
+    color: #FF9800; /* Orange */
+}
+
+td:nth-child(4)[data-priority="high"] {
+    color: #F44336; /* Red */
+}
+
+/* Button hover effect */
+button {
+    height: 33px;
+    width: 100px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #e9f7e2;
+    cursor: pointer;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}

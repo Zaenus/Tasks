@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+
+    <link rel="stylesheet" href="./css/createTask.css">
+</head>
+<body>
+    <h1>Chamados</h1>
+    <form id="taskForm">
+        <label for="unity">Unidade:</label>
+        <input type="text" id="unity" required><br><br>
+
+        <label for="person">Pessoa:</label>
+        <input type="text" id="person" required><br><br>
+
+        <label for="description">Descrição:</label>
+        <textarea id="description" required></textarea><br><br>
+
+        <label for="priority">Prioridade:</label>
+        <select id="priority" required>
+            <option value="low">Baixa</option>
+            <option value="medium">Média</option>
+            <option value="high">Alta</option>
+        </select><br><br>
+
+        <button type="submit">Criar Chamado</button>
+    </form>
+
+    <!-- Popup Modal -->
+    <div id="taskCreatedPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <h2>Chamado Criado com Sucesso!</h2>
+            <p>Seu chamado foi adicionado ao sistema.</p>
+        </div>
+    </div>
+
+    <script src="./tasks.js"></script>
+</body>
+</html>
